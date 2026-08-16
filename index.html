@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Medha — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ DESKTOP / HOMEPAGE ============ -->
+<main id="desktop" class="view view--desktop is-active" aria-label="Desktop home">
+
+  <header class="titlebar">
+    <h1 class="titlebar__text">Hi! I'm Medha</h1>
+  </header>
+
+  <div class="desktop__stage">
+
+    <!-- LEFT FOLDER COLUMN -->
+    <nav class="folder-col folder-col--left" aria-label="Projects">
+      <button class="folder" data-target="project1" data-side="left">
+        <span class="folder__art" aria-hidden="true">
+          <img class="folder__img folder__img--idle" src="assets/folder1.png" alt="" />
+          <img class="folder__img folder__img--hover" src="assets/folder2.png" alt="" />
+        </span>
+        <span class="folder__label">Project1</span>
+      </button>
+
+      <button class="folder" data-target="project2" data-side="left">
+        <span class="folder__art" aria-hidden="true">
+          <img class="folder__img folder__img--idle" src="assets/folder1.png" alt="" />
+          <img class="folder__img folder__img--hover" src="assets/folder2.png" alt="" />
+        </span>
+        <span class="folder__label">Project2</span>
+      </button>
+
+      <button class="folder" data-target="project3" data-side="left">
+        <span class="folder__art" aria-hidden="true">
+          <img class="folder__img folder__img--idle" src="assets/folder1.png" alt="" />
+          <img class="folder__img folder__img--hover" src="assets/folder2.png" alt="" />
+        </span>
+        <span class="folder__label">Project3</span>
+      </button>
+    </nav>
+
+    <!-- CHARACTER -->
+    <div class="character" aria-hidden="true">
+      <img class="character__img character__img--center is-active" src="assets/char1.png" alt="" />
+      <img class="character__img character__img--left" src="assets/char2.png" alt="" />
+      <img class="character__img character__img--right" src="assets/char3.png" alt="" />
+    </div>
+
+    <!-- RIGHT FOLDER COLUMN -->
+    <nav class="folder-col folder-col--right" aria-label="More sections">
+      <button class="folder" data-target="skills" data-side="right">
+        <span class="folder__art" aria-hidden="true">
+          <img class="folder__img folder__img--idle" src="assets/folder1.png" alt="" />
+          <img class="folder__img folder__img--hover" src="assets/folder2.png" alt="" />
+        </span>
+        <span class="folder__label">Skills</span>
+      </button>
+
+      <button class="folder" data-target="experience" data-side="right">
+        <span class="folder__art" aria-hidden="true">
+          <img class="folder__img folder__img--idle" src="assets/folder1.png" alt="" />
+          <img class="folder__img folder__img--hover" src="assets/folder2.png" alt="" />
+        </span>
+        <span class="folder__label">Experience/<br/>Education</span>
+      </button>
+
+      <button class="folder" data-target="sidequests" data-side="right">
+        <span class="folder__art" aria-hidden="true">
+          <img class="folder__img folder__img--idle" src="assets/folder1.png" alt="" />
+          <img class="folder__img folder__img--hover" src="assets/folder2.png" alt="" />
+        </span>
+        <span class="folder__label">Side Quests</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <p class="hint">click a folder to open it</p>
+</main>
+
+
+<!-- ============ INNER PAGES ============ -->
+<!-- Each inner page keeps the sky/folder universe but has room to breathe + scroll -->
+
+<template id="tpl-project">
+  <article class="page page--project">
+    <button class="back-btn" data-back>
+      <span class="back-btn__icon">←</span> back to desktop
+    </button>
+
+    <div class="page__head">
+      <span class="page__folder-icon"><img src="assets/folder2.png" alt="" /></span>
+      <div>
+        <p class="page__eyebrow">PROJECT FILE</p>
+        <h2 class="page__title">__PROJECT_TITLE__</h2>
+      </div>
+    </div>
+
+    <div class="page__grid">
+      <section class="card">
+        <h3>Overview</h3>
+        <p class="placeholder">Placeholder — a short summary of what this project is and why it exists will go here once real content is added.</p>
+      </section>
+
+      <section class="card">
+        <h3>Problem</h3>
+        <p class="placeholder">Placeholder — the problem this project set out to solve.</p>
+      </section>
+
+      <section class="card">
+        <h3>Solution</h3>
+        <p class="placeholder">Placeholder — the approach taken to solve it.</p>
+      </section>
+
+      <section class="card">
+        <h3>My Contribution</h3>
+        <p class="placeholder">Placeholder — what was specifically built or owned.</p>
+      </section>
+
+      <section class="card card--wide">
+        <h3>Technologies / Tools</h3>
+        <ul class="tag-list">
+          <li class="tag">Tool</li>
+          <li class="tag">Tool</li>
+          <li class="tag">Tool</li>
+          <li class="tag">Tool</li>
+        </ul>
+      </section>
+
+      <section class="card card--wide">
+        <h3>Screenshots / Mockups</h3>
+        <div class="shot-row">
+          <div class="shot-placeholder">image</div>
+          <div class="shot-placeholder">image</div>
+          <div class="shot-placeholder">image</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Outcome / Results</h3>
+        <p class="placeholder">Placeholder — measurable or qualitative outcomes.</p>
+      </section>
+
+      <section class="card">
+        <h3>Links</h3>
+        <p class="placeholder">Placeholder — live demo / repo link if applicable.</p>
+      </section>
+    </div>
+  </article>
+</template>
+
+<template id="tpl-skills">
+  <article class="page page--skills">
+    <button class="back-btn" data-back>
+      <span class="back-btn__icon">←</span> back to desktop
+    </button>
+
+    <div class="page__head">
+      <span class="page__folder-icon"><img src="assets/folder2.png" alt="" /></span>
+      <div>
+        <p class="page__eyebrow">FOLDER</p>
+        <h2 class="page__title">Skills</h2>
+      </div>
+    </div>
+
+    <div class="page__grid page__grid--skills">
+      <section class="card">
+        <h3>Frontend</h3>
+        <ul class="tag-list">
+          <li class="tag">Skill</li><li class="tag">Skill</li><li class="tag">Skill</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Backend</h3>
+        <ul class="tag-list">
+          <li class="tag">Skill</li><li class="tag">Skill</li><li class="tag">Skill</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Tools</h3>
+        <ul class="tag-list">
+          <li class="tag">Tool</li><li class="tag">Tool</li><li class="tag">Tool</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Design / Creative</h3>
+        <ul class="tag-list">
+          <li class="tag">Skill</li><li class="tag">Skill</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Other</h3>
+        <ul class="tag-list">
+          <li class="tag">Skill</li><li class="tag">Skill</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</template>
+
+<template id="tpl-experience">
+  <article class="page page--experience">
+    <button class="back-btn" data-back>
+      <span class="back-btn__icon">←</span> back to desktop
+    </button>
+
+    <div class="page__head">
+      <span class="page__folder-icon"><img src="assets/folder2.png" alt="" /></span>
+      <div>
+        <p class="page__eyebrow">FOLDER</p>
+        <h2 class="page__title">Experience / Education</h2>
+      </div>
+    </div>
+
+    <div class="page__grid page__grid--timeline">
+      <section class="card">
+        <h3>Professional Experience</h3>
+        <div class="timeline-item">
+          <p class="timeline-item__role placeholder">Role — Company</p>
+          <p class="timeline-item__meta placeholder">Dates</p>
+          <p class="placeholder">Placeholder description of responsibilities and impact.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-item__role placeholder">Role — Company</p>
+          <p class="timeline-item__meta placeholder">Dates</p>
+          <p class="placeholder">Placeholder description of responsibilities and impact.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Education</h3>
+        <div class="timeline-item">
+          <p class="timeline-item__role placeholder">Degree — Institution</p>
+          <p class="timeline-item__meta placeholder">Dates</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Achievements &amp; Certifications</h3>
+        <ul class="tag-list">
+          <li class="tag">Placeholder</li><li class="tag">Placeholder</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</template>
+
+<template id="tpl-sidequests">
+  <article class="page page--sidequests">
+    <button class="back-btn" data-back>
+      <span class="back-btn__icon">←</span> back to desktop
+    </button>
+
+    <div class="page__head">
+      <span class="page__folder-icon"><img src="assets/folder2.png" alt="" /></span>
+      <div>
+        <p class="page__eyebrow">FOLDER</p>
+        <h2 class="page__title">Side Quests</h2>
+      </div>
+    </div>
+
+    <div class="page__grid page__grid--quests">
+      <section class="card">
+        <h3>Art</h3>
+        <div class="shot-placeholder shot-placeholder--tall">image</div>
+        <p class="placeholder">Placeholder note about this hobby.</p>
+      </section>
+      <section class="card">
+        <h3>Painting</h3>
+        <div class="shot-placeholder shot-placeholder--tall">image</div>
+        <p class="placeholder">Placeholder note about this hobby.</p>
+      </section>
+      <section class="card">
+        <h3>Design</h3>
+        <div class="shot-placeholder shot-placeholder--tall">image</div>
+        <p class="placeholder">Placeholder note about this hobby.</p>
+      </section>
+    </div>
+  </article>
+</template>
+
+<div id="page-root" class="view view--page"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
