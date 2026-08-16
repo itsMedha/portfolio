@@ -93,7 +93,7 @@ a, button {
   align-items: center;
   justify-content: center;
   gap: clamp(28px, 6vw, 110px);
-  padding: 2vh clamp(12px, 3vw, 48px);
+  padding-top: 7vh;
   min-height: 0;
 }
 
